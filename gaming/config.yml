@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: game-demo
+
+data:
+
+  MYSQL_DATABASE: gamedb
+
+  DB_HOST: db-svc
+  DB_PORT: "3306"
+  DB_NAME: gamedb
+  MYSQL_DATABASE: gamedb
