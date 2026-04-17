@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+ name: game-config
+
+data:
+
+ SPRING_DATASOURCE_URL: jdbc:mysql://mysql-0.mysql-svc:3306/game
+
+ SPRING_DATA_REDIS_HOST: redis-0.redis-svc.default.svc.cluster.local
+
+ SPRING_DATA_REDIS_PORT: "6379"
+
+ SPRING_JPA_HIBERNATE_DDL_AUTO: update
